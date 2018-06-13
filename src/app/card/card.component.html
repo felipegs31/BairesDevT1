@@ -1,0 +1,14 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-03 center" *ngFor="let photo of photos">
+      <div class="card space" style="width: 18rem;" >
+        <img class="card-img-top" [src]="photo.thumbnailUrl" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Album id: {{photo.albumId}}</h5>
+          <p class="card-text">{{photo.title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

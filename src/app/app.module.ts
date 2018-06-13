@@ -1,18 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { PhotoService } from './app.service';
+import { PhotosService } from './photos.service';
 import { HttpModule } from '@angular/http';
+import { CardComponent } from './card/card.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
-  providers: [PhotoService],
+  providers: [PhotosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
